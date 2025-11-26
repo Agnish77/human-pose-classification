@@ -47,7 +47,7 @@ if st.button("Download Model"):
         download_dir(local_path, s3_prefix)
     st.success("Model download complete!")
 
-uploaded_file = st.file_uploader("Upload an image", type=["jpg", "jpeg", "png"])
+uploaded_file = st.file_uploader("Upload an image", type=["jpg", "jpeg", "png","webp"])
 
 if uploaded_file:
     image = Image.open(uploaded_file)
